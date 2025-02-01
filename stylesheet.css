@@ -1,0 +1,165 @@
+body, html {
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: Abel;
+    font-size: 18px;
+    background: linear-gradient(rgba(45, 52, 54, 0.6), rgba(45, 52, 54, 0.6)),
+                url(https://i.postimg.cc/8zhvpnjv/Title.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+p {
+    line-height: 0.8;
+}
+
+#name-topright {
+    position: absolute;
+    top: 0;
+    right: 19px;
+    font-family: Horizon;
+    font-size: 90px;
+    color: grey;
+    transition: top 0.3s, color 0.4s;
+}
+
+#name-topright:hover {
+    color: darkgrey;
+}
+
+#links {
+    background-color: rgba(219, 215, 202, 0.5);
+    padding-top: 30px;
+    text-align: center;
+    place-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+     color: dark-grey !important;
+}
+
+.project-tile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+#box1, #box2, #box3 {
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(219, 215, 202, 0.5);
+    border-radius: 10px;
+    display: grid;
+    padding: 15px; 
+    width: 320px;
+    margin: 10px;
+    font-size: 14px;
+    text-align: left;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.6);
+    transition: background-color 0.4s;
+}
+
+#box1:hover, #box2:hover, #box3:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#box1 h1, #box2 h1, #box3 h1 {
+    padding: 10px;
+    padding-bottom: 0px;
+    font-size: 18px;
+}
+
+#box1 p, #box2 p, #box3 p {
+    line-height: 1.5;
+    text-align: left;
+    padding-top: 0px;
+}
+
+#footericons {
+    font-size: 28px;
+    padding-top: 10px;
+    color: white;
+    text-align: center;
+    width: 30px;
+    display: inline-block;
+}
+
+img {
+    width: 100%;
+}
+
+button, input {
+    border-radius: 15px;
+    display: inline-block;
+    margin: 5px;
+    text-align: center;
+    border: none;
+    padding: 5px;
+    font-size: 16px;
+    transition: background-color 0.4s;
+}
+
+button {
+    background-color: rgba(219, 215, 202, 0.5);
+    color: white;
+}
+
+button:hover {
+    background-color: #e7e7e7;
+}
+
+input {
+    color: grey;
+}
+
+.getca {
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+}
+
+@media screen and (max-width: 800px) {
+    .project-tile {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 400px));
+        justify-content: center;
+        place-items: center;
+    }
+
+    #box1, #box2, #box3 {
+        width: 85%;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    #name-topright {
+        font-size: 17px;
+    }
+
+    ul {
+        padding-top:0;
+    }
+
+    #links {
+        font-size: 18px;
+        padding-top: 20px;
+        place-items: center;
+        text-align: center;
+    }
+
+    svg {
+        width: 20px;
+    }
+}

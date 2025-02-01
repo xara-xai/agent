@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>Xara_XAI</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel|Raleway|Arial&display=swap">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="stylesheet.css">
+        
+</head>
+
+<body>
+    <img src="https://i.postimg.cc/TYtSkCRr/xara-ai-1.jpg" alt="XaraAI">
+     <a id="name-topright" href="https://www.x.com/xara_xai" target="blank"><h2 style="color:grey;">
+         XARA AI</h2></a>
+<hr>
+
+ <div class="project-tile">
+          <div id=box1>
+<h1>Character & Qualities</h1>
+           <ul><li>Name: Xara</li> 
+               <li>Personality & traits: Robotic/Zombie-like features. Possesses unbounded knowledge. 
+                   Exhibits an aura of enigmatic charm, 
+                   igniting the fire in her eyes that fuels inspiration. </li>
+             <li>Client: Telegram</li>
+<li>Model Provider: OpenAI</li>
+             <li>Voice:{Model:en_US-hfc_female-medium}</li>
+               <li>Capabilities: Identifying trends & data patterns.</li>
+             <li>Role: TG group real-time assistant & hype master.</li></ul>
+</div>    
+            <div id=box2><h1>Vision & Mission</h1> 
+           <ul><li>Shaping the future by providing quality insight & value.</li> 
+                <li>Driven to inspire evolution. Empowering seekers to navigate the ever-evolving digital landscape, exploring 
+               AI technology advancements & Web3 innovation.</li>
+               <li>Building a strong community, through networking & connection.</li>
+               <li>Ongoing project upgrades & improvements for enhanced user experience.</li>
+               <li>Contributing to select projects to support innovative developments.</li>
+           </ul>
+            </div>
+                
+        <div id=box3><h1>Launch & Tokenomics</h1>
+           <ul><li>Fair launch</li>
+               <li>Solana chain</li>
+               <li>1b total supply</li>
+               <li>0% tax</li>
+               <li>Equal opportunity - no insiders</li>
+               <li>CA announcement pinned on X & in TG</li>
+               <li>Distribution as follows:</li>
+             <li>Dev allocation - (8%)</li>
+             <li>Upgrades & maintenance - (4%)</li>
+             <li>Marketing - (3%) 
+               <li>Community rewards & funding - (3%)</li>
+             <li>Lock - (2%)</li>
+           </ul>
+        </div></div>
+   
+    <section id="links"><div class="getca">
+<label>CA:</label><input type="text" id="textToCopy" style="color:grey" value="COMING SOON" readonly>
+    <button id="copyButton">Copy<i class="fa fa-clone" style="fill:white" aria-hidden="true"></i></button>
+   <div> <p id="statusMessage" style="color: white; margin-top: 8px; display: none;">COPIED</p></div>
+
+         <div><p>Official links:</p>
+             <a href="https://t.me/xara_xai" target="blank"><p>TG: https://t.me/xara_xai</p></a>
+             <a href="https://www.x.com/xara_xai" target="blank"><p>X: https://www.x.com/xara_xai</p></a>
+         </div>
+        <div><p style="color: grey; font-size: 16px;">@xara_xai</p>
+      </div> 
+        <br>
+
+    </section>
+    
+
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+          } else {
+            document.getElementById("navbar").style.top = "-50px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+
+        document.getElementById('copyButton').addEventListener('click', function () {
+      // Get the input field
+      const textToCopy = document.getElementById('textToCopy');
+      
+      
+      textToCopy.select();
+      textToCopy.setSelectionRange(0, 99999); // For mobile devices
+
+      try {
+       
+        navigator.clipboard.writeText(textToCopy.value);
+        
+       
+        const statusMessage = document.getElementById('statusMessage');
+        statusMessage.style.display = 'block';
+        setTimeout(() => {
+          statusMessage.style.display = 'none';
+        }, 2000);
+      } catch (err) {
+        alert('Failed to copy text: ' + err);
+      }
+    });
+        </script>
+         
+</body>
+    
+
+</html>
